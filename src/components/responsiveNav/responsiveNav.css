@@ -1,0 +1,102 @@
+.menu {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+.nav-links {
+    list-style: none;
+    width: 0.001px;
+    height: 0.001px;
+    visibility: hidden;
+    position: absolute;
+    top: -1000%;
+}
+
+
+.nav-links li {
+    color: white;
+    text-decoration: none;
+    font-size: 1px;
+}
+
+@media screen and (max-width: 1253px) {
+    .nav-links {
+        visibility: visible;
+        position: fixed;
+        top: -20%;
+        background: black;
+        height: 110vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        align-items: center;
+        z-index: 1;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 0.6s ease-out;
+        opacity: 0.85;
+    }
+
+    .link-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        position: fixed;
+        top: 12%;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+
+    .link {
+        margin-bottom: 80px;
+        margin-right: 70px;
+        font-family: "Raleway";
+        font-weight: 500;
+        font-size: 20px !important;
+        letter-spacing: 1px;
+        opacity: 0;
+        color: white;
+        cursor: pointer;
+    }
+
+    .link:nth-child(1) {
+        transition: all 0.5s ease 0.2s
+    }
+    .link:nth-child(2) {
+        transition: all 0.5s ease 0.4s
+    }
+    .link:nth-child(3) {
+        transition: all 0.5s ease 0.6s
+    }
+    .link:nth-child(4) {
+        transition: all 0.5s ease 0.8s
+    }
+
+    .fade {
+        opacity: 1 !important;
+    }
+
+    .open {
+        clip-path: circle(1350px at 90% -10%);
+        -webkit-clip-path: circle(1350px at 90% -10%);
+    }
+    
+  .menu {
+    visibility: visible;
+    filter: invert(100%);
+    font-size: 40px;
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+}

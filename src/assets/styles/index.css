@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Raleway";
+  src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "SplineSansMono";
+  src: url('../fonts/SplineSansMono-VariableFont_wght.ttf');
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "SplineSansMono";
+  background-color: white;
+}
+
+
+
